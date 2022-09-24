@@ -1,0 +1,122 @@
+.docnav-bar {
+  background: var(--main-bg);
+  color: var(--mainWhite);
+  position: sticky;
+  top: 0;
+  height: 4.5rem;
+  width: 100%;
+  margin-left: 0 auto;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.flex-center {
+  display: flex;
+  place-items: center center;
+  flex-wrap: wrap;
+}
+
+.nav-icon {
+  font-size: 1.4rem;
+}
+
+.title-firstword {
+  color: var(--primaryColor);
+}
+
+.title-secondword {
+  color: var(--secondaryColor);
+}
+
+.nav-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+a {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+.navbar h1:hover {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.cart-btn,
+.wishlist-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-items,
+.wishlist-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+
+.cart-name {
+  margin-top: 0.6rem;
+  margin-left: 0.2rem;
+  font-size: 1rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.margin-edge-items {
+  margin: 0 0.9rem;
+}
+
+.login-site {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  font-size: 1.2rem;
+  padding: 7px;
+}
+
+.search-input[type="search"] {
+  border-radius: 10px 0 0 10px;
+}
+
+.border-searchbox {
+  padding: 7px;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.search-go {
+  background: var(--secondaryColor);
+  color: var(--main-bg);
+  border-radius: 0 10px 10px 0;
+}
+.position-relative {
+  position: relative;
+}
+.user-more-box {
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  position: absolute;
+  line-height: 1.5rem;
+  margin-left: -5rem;
+  background-color: var(--primaryColor);
+  border-radius: 0.5rem;
+}
+.triangle {
+  border-bottom: 1rem solid var(--primaryColor);
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+  height: 0;
+  width: 0;
+}
+@media screen and (max-width: 450px) {
+  .docnav-bar {
+    height: 9rem;
+  }
+}
