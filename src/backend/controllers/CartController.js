@@ -14,7 +14,7 @@ import { formatDate, requiresAuth } from "../utils/authUtils";
 export const getCartItemsHandler = function (schema, request) {
   const userId = requiresAuth.call(this, request);
   if (!userId) {
-    return new Response(
+    new Response(
       404,
       {},
       {
@@ -36,7 +36,7 @@ export const addItemToCartHandler = function (schema, request) {
   const userId = requiresAuth.call(this, request);
   try {
     if (!userId) {
-      return new Response(
+      new Response(
         404,
         {},
         {
@@ -74,7 +74,7 @@ export const removeItemFromCartHandler = function (schema, request) {
   const userId = requiresAuth.call(this, request);
   try {
     if (!userId) {
-      return new Response(
+      new Response(
         404,
         {},
         {
@@ -109,7 +109,7 @@ export const updateCartItemHandler = function (schema, request) {
   const userId = requiresAuth.call(this, request);
   try {
     if (!userId) {
-      return new Response(
+      new Response(
         404,
         {},
         {
