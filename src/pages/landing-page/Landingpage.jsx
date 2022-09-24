@@ -10,7 +10,7 @@ import newImg3 from "../../assets/images/webp/navy-green-jacket.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { useFillter } from "../../hooks";
 
-export default function landingPage() {
+export default function LandingPage() {
   const navigate = useNavigate();
   const { dispatch } = useFillter();
   const JacketHandler = () => {
