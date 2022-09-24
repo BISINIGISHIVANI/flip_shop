@@ -13,11 +13,9 @@ export default function NavBar(search) {
   } = useAuth();
   const {
     cartState: { cart },
-    cartDispatch
   } = useCart();
   const {
     wishlistState: { wishlist },
-    wishlistDispatch
   } = useWishList();
   const { dispatch } = useFillter();
   const [showModal, setShowModal] = useState(false);

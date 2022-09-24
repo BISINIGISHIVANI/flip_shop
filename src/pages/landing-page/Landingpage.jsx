@@ -48,7 +48,7 @@ export default function LandingPage() {
               <img src={productImg1} alt="product" className="product-img" />
               <button
                 onClick={() => {
-                  JacketHandler(),
+                  JacketHandler();
                     dispatch({
                       type: "CATEGORY_SOLID",
                       payload: { solidJacket: true }
@@ -68,7 +68,7 @@ export default function LandingPage() {
               <img src={productImg2} alt="product" className="product-img" />
               <button
                 onClick={() => {
-                  JacketHandler(),
+                  JacketHandler();
                     dispatch({
                       type: "CATEGORY_THIN",
                       payload: { thinJacket: true }
@@ -88,7 +88,7 @@ export default function LandingPage() {
               <img src={newImg1} alt="product" className="product-img" />
               <button
                 onClick={() => {
-                  JacketHandler(),
+                  JacketHandler();
                     dispatch({
                       type: "CATEGORY_LIGHTWEIGHT",
                       payload: { lightWeightJacket: true }
