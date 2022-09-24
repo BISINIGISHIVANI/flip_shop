@@ -6,10 +6,12 @@
     "dayjs": "^1.11.4",
     "jwt-decode": "^3.1.2",
     "jwt-encode": "^1.0.1",
+    "material-react-toastify": "^1.0.1",
     "miragejs": "^0.1.45",
     "mockman-js": "^1.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "uuid": "^8.3.2"
   },
@@ -33,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
