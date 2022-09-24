@@ -2,7 +2,7 @@
 
 This folder contains the Mock Backend created for E-Commerce App. It contains different API end-points and database configuration for building E-Commerce.
 ## Flybuy App
-  #### flybuy app is latest women jackect collection of ecommerce( online shop) [app-live url]()
+  #### flybuy app is latest women jackect collection of ecommerce( online shop) [app-live url](https://flip-shop.vercel.app/)
 
 - features of app
 - Auth Management
