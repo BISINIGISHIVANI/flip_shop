@@ -1,0 +1,88 @@
+  .login-box h2 {
+    padding-bottom: 1.3rem;
+    color: #fff;
+    text-align: center;
+  }
+  .login-box{
+    height:27rem;
+  }
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    color: var(--mainWhite);
+    margin-bottom: 2.5rem;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    transition: 0.5s;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    color: var(--mainWhite);
+    pointer-events: none;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -1.6rem;
+    left: 0;
+    color: var(--mainGrey);
+    font-size: 18px;
+  }
+  .password-box {
+    color: var(--mainWhite);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  .div-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .forgot-pwd {
+    color: var(--primaryColor);
+    cursor: pointer;
+  }
+  .login-submit {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--mainWhite);
+    background: var(--primaryColor);
+    font-weight: 600;
+    border: 1px solid lightblue;
+    padding: 4px;
+  }
+  .create-account {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 450px) {
+    .docnav-bar {
+      height: 9rem;
+    }
+    .loginbox-align {
+      top: 70%;
+    }
+    .login-box {
+      width: 19rem;
+    }
+  }
+  

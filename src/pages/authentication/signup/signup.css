@@ -1,0 +1,93 @@
+.login-box {
+  width: 25rem;
+  height: max-content;
+  padding: 2rem;
+  background: var(--main-bg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+  .login-box h2 {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .login-box h4 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    transition: 0.5s;
+  }
+  .form-terms {
+    color: var(--primaryColor);
+    padding-bottom: 1rem;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    color: #fff;
+    pointer-events: none;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -1.6rem;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+  }
+  .signup-btn {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--primaryColor);
+    font-weight: 600;
+    border: 1px solid lightblue;
+    padding: 4px;
+    width: 100%;
+  }
+  .already-account {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--primaryColor);
+    padding: 8px 0;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 450px) {
+    .docnav-bar {
+      height: 9rem;
+    }
+    .loginbox-align {
+      top: 90vh;
+    }
+    .login-box {
+      width: 18rem;
+    }
+  }
+  
