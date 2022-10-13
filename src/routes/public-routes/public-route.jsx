@@ -9,8 +9,10 @@ import {
 } from "../../pages";
 import { PrivateRoute } from "../private-routes/private-route";
 import SingleProductPage from "../../pages/products/single-product/singleProductPage";
+import { ToastContainer } from "material-react-toastify";
 export const PublicRoute = () => {
   return (
+    <div>
     <Routes>
       <Route path="/login" element={<Loginpage />} />
       <Route path="/signup" element={<SignupPage />} />
@@ -36,5 +38,17 @@ export const PublicRoute = () => {
         }
       />
     </Routes>
+    <ToastContainer
+    position="bottom-left"
+    autoClose={3000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    />
+    </div>
   );
 };
