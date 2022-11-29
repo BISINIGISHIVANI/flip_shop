@@ -4,7 +4,7 @@ const CategoryFilter=({solidJacket,thinJacket,lightWeightJacket,dispatch})=>{
     <div className="filter-type-container">
       <input 
       type="checkbox" 
-      className="solid-Jacket"
+      className="solid-Jacket"xs
       checked={solidJacket}
       onChange={(e) =>
           e.target.checked

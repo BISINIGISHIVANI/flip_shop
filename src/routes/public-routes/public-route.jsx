@@ -10,6 +10,7 @@ import {
 import { PrivateRoute } from "../private-routes/private-route";
 import SingleProductPage from "../../pages/products/single-product/singleProductPage";
 import { ToastContainer } from "material-react-toastify";
+import 'material-react-toastify/dist/ReactToastify.css';
 export const PublicRoute = () => {
   return (
     <div>
@@ -39,7 +40,7 @@ export const PublicRoute = () => {
       />
     </Routes>
     <ToastContainer
-    position="bottom-left"
+    position="top-right"
     autoClose={3000}
     hideProgressBar={false}
     newestOnTop={false}
