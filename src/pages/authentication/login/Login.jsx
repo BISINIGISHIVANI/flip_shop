@@ -4,7 +4,7 @@ import NavBar from "../../../components/navbar/navabar";
 import { useAuth } from "../../../hooks/context/auth-context";
 import axios from "axios";
 import { useState } from "react";
-
+import { toast } from "material-react-toastify";
 export default function LoginPage() {
   const navigate = useNavigate();
   const { authDispatch } = useAuth();
@@ -39,14 +39,13 @@ export default function LoginPage() {
             token: response.data.encodedToken
           }
         });
-
         navigate("/");
       } else if (response.status === 404) {
-        alert("Email not found");
+        toast.info("Email not found");
       } else if (response.status === 401) {
-        alert("Wrong Password");
+        toast.warning("Wrong Password");
       } else if (response.status === 500) {
-        alert("Server Error");
+        toast.error("Server Error");
       }
     } catch (error) {
       console.error(error);
@@ -63,7 +62,7 @@ export default function LoginPage() {
   const submitHandler = (e) => {
     e.preventDefault();
     if (!checkInputsAreNotEmpty(user)) {
-      alert("feild are not empty");
+      toast.error("feild are not empty");
     } else {
       loginHandler(user, authDispatch, navigate);
     }

@@ -1,3 +1,8 @@
 .width-fitcontent{
     width:fit-content;
 }
+.two-products{
+    display: grid;
+    grid-template-columns:auto ;
+    width: 60%;
+}

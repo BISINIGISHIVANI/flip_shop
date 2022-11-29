@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./wishlist.css";
 import NavBar from "../../components/navbar/navabar";
 import { WishlistCard } from "./wishlist_card/Wishlistcard";
@@ -25,6 +26,7 @@ export default function Wishshlist() {
   return (
     <>
       <NavBar />
+      {wishlist.length >0?
       <section className="products">
         <div className="section-title ">
           <h2 className={`${wishlist.length === 0 ? "padding-sm" : ""}`}>
@@ -34,7 +36,9 @@ export default function Wishshlist() {
         <div className="products-center">
           {wishlist.map(({ _id, image, name, subtitle, price }) => (
             <WishlistCard
-              className={`${wishlist.length === 1 ? "product1" : "product"}`}
+              className={`${wishlist.length === 1 ? "product1" : "product"}
+              ${wishlist.length === 2 ? "product2" : ""}
+              `}
               key={_id}
               productId={_id}
               productImg={image}
@@ -47,7 +51,16 @@ export default function Wishshlist() {
             />
           ))}
         </div>
-      </section>
+      </section>:
+        <div>
+            <div className="empty-cart">
+              <h2 className="padding-sm">Your Wishlist is Empty</h2>
+              <Link to="/products">
+                <button className="banner-btn1 cursor-pointer">shop now</button>
+              </Link>
+            </div>
+          </div>
+       }
     </>
   );
 }

@@ -16,7 +16,10 @@ const ProductsList = ({
 }) => {
   const navigate = useNavigate();
   return (
-    <article className={`${filteredData.length===1?"single-product1 cursor-pointer":"single-product cursor-pointer"}`}>
+    <article className={`${filteredData.length===1 ?"single-product1 cursor-pointer":"single-product cursor-pointer"}
+    ${filteredData.length===2 ?"two-products":""}
+    ` 
+    }>
       <div className="img-container">
         <img
           src={productFilterImg}

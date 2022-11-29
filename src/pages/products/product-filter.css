@@ -13,7 +13,7 @@
 
 .products-middle {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
   width: 80vw;
